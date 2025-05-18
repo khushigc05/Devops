@@ -1,0 +1,105 @@
+🔹 Basic Definition:
+DevOps is a combination of two words:
+Dev = Development team (people who write code),
+Ops = Operations team (people who maintain servers and release code).
+DevOps is a culture and practice where these two teams work together to:
+Deliver software faster,
+Reduce bugs,
+Automate repetitive tasks.
+🔸 Why DevOps was needed?
+Before DevOps, developers and operations worked separately:
+Developers finished their code and passed it to operations.
+Operations ran the code on live servers.
+This caused delays, errors, and blame games.
+Example: Imagine a restaurant:
+Chefs (developers) cook the food.
+Waiters (operations) serve the food.
+If they don’t communicate well, customers (users) get bad service.
+DevOps makes them work like a team, so the food (software) reaches the customer (user) quickly and correctly.
+⏳ A Short History of DevOps
+2008: Patrick Debois started the DevOps idea to solve developer-operations fights.
+2009: At a tech event, engineers from Flickr showed how they deployed new software 10+ times a day.
+This inspired many companies to follow the DevOps style.
+
+🔄 DevOps Lifecycle (The Working Process)
+1.Plan: What should we build?
+-Gathering requirements such as functional and non function requirements , clear requirements gathering avoid rework,saving cost.
+2.Develop: Code is written.
+-tasks are created and for each task to be implemented a code is written
+-writing good quality of code saves time and money to fix it in future
+3.Build: Code is turned into software.-code is turned into software to make it more meaningful and is given to operation team further for testing and releasing.
+4.Test: Check if code works.-writing test cases and checking if the code written passes all the test cases, if it passes all the test case then the code written completes the task and fullfilling the requirements asked by customer.-early testing detects the error early and we can fix it early reducing the costly fixes later.
+5.Release: Code is pushed to live servers.-code is made available by operation team for users to use it and give feedback
+6.Deploy: Code is now running.7.Operate: Monitor and keep it running smoothly.-checking if the codes written are executing properly and there are no errors
+8.Monitor: Get feedback, fix bugs, improve.-if there is an feedback given by user in the system the devops team will fastly implement the changes and release updated version very fastly comapred to tarditional method.
+🌀 This is a loop, so changes happen continuously.
+----------------------------------------------------------------------------------
+⚙️ DevOps Practices
+🔹 1. Infrastructure Automation
+Automating server setup, like auto-installing Linux or Windows.
+🔹 2. Configuration Management
+Making sure all servers have the same settings.
+Example: All servers should have Python 3.9, not some 3.6 and some 3.8.
+🔹 3. Deployment Automation
+Pushing new versions of apps automatically, not manually.Feedbacks by user are implemented by devops and released automatically to meet user satisfaction.
+🔹 4. Monitoring and Logs
+Checking system health and keeping records of events.If the codes are written well during building then there will be easy maintainence saving cost and money
+Example: Is the website working? How many users visited?
+
+🧱 Infrastructure as Code (IaC)
+🔹 What is it?
+You write code (scripts) to create and manage your servers.
+🔹 Why?
+Manual setup takes time and can cause mistakes.
+🔹 Real-life Example:
+Chef writes a recipe = Anyone can cook the same food.
+Similarly, DevOps writes a script = Any server can be setup the same way.
+----------------------------------------------------------------------------------Question:
+How to use Ansible? (Give a general answer for both an e-commerce company and a startup. First define the problem and then explain the solution.)
+
+✅ Answer:
+🧩 The Problem (Common for Both Companies)
+Whether it's a big e-commerce company or a small startup, managing a growing number of servers and applications becomes difficult.
+Some common problems they face:
+Manual Setup: Setting up each server by hand takes time and causes mistakes.
+Configuration Drift: Some servers may have different settings or software versions, causing bugs.
+Time Waste: Repeating the same task (like installing software) on every server wastes time.
+Security Issues: Hard to maintain proper user access and firewall rules on all servers.
+Scaling Problems: As the company grows, handling more machines becomes a challenge.
+
+🛠️ The Solution: Using Ansible
+Ansible is an open-source tool that helps automate the setup, configuration, and maintenance of servers.
+📝 How Ansible Solves the Problem:
+Agentless Setup:
+No need to install anything on servers.
+Ansible uses SSH to connect and run commands.
+Playbooks:
+You write all your server instructions in a simple YAML file (called a playbook).
+Example tasks: install web server, create users, start services, apply firewall rules.
+Inventory Management:
+All servers are listed in an inventory file.
+You can group servers as “web”, “database”, “test”, etc., and apply settings to the whole group at once.
+Repeatable & Reliable:
+Same playbook can be used again for new servers.
+No manual errors. Everything happens the same way every time.
+
+🛒 Use Case 1: E-Commerce Company
+A global e-commerce company like Amazon or Flipkart has hundreds of servers across the world.
+Using Ansible, they:
+Set up new servers with a single command.
+Apply uniform settings on all servers.
+Schedule automatic security updates.
+Use role-based access control to manage user permissions.
+Avoid configuration drift (all servers stay consistent).
+
+🚀 Use Case 2: Startup Company
+A startup is growing and needs to support more users.
+Using Ansible, they:
+Save time by automating server setup.
+Quickly scale when new customers join.
+Run the same playbook for both development and production environments.
+Focus more on building features than managing servers.
+
+✅ Final Summary:
+Ansible helps both small startups and large companies save time, avoid errors, and grow faster by automating server setup, software installation, configuration, and updates.
+It is simple to use, doesn’t require extra software on servers, and supports quick and safe scaling of infrastructure.
