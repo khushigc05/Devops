@@ -4,7 +4,7 @@ Dev = Development team (people who write code),
 Ops = Operations team (people who maintain servers and release code).
 DevOps is a culture and practice where these two teams work together to:
 Deliver software faster,
-Reduce bugs,
+Reduce bugs
 Automate repetitive tasks.
 🔸 Why DevOps was needed?
 Before DevOps, developers and operations worked separately:
